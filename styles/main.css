@@ -68,9 +68,10 @@ ul li a {
   max-width: 940px;
   margin: auto;
   align-items: center;
+  display: flex;
   margin-top: 35px;
   margin-bottom: 35px;
-  display: flex;
+  
   background-color: #f4f4f4;
 }
 
@@ -182,9 +183,13 @@ p .name-post{
 /*second popular*/
 .popular-second{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  /*grid-template-columns: 1fr 1fr 1fr;*/
+  grid-template-columns: repeat(auto-fill, minmax(250px, max-content));
   gap: 2%;
+  justify-content: center;
 }
+
+
 
 .image-post{
   width: 100%;
@@ -387,6 +392,196 @@ h4{
   padding-bottom: 30px;
   margin-left: 29%;
 }
+
+/*RESPONSIVE 828*/
+@media screen and (max-width:995px){
+  .search {
+    width: 100%;
+    max-width: 860px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+}
+
+
+  @media screen and (max-width:978px){
+    .search {
+      width: 100%;
+      max-width: 860px;
+      margin-top: 25px;
+      margin-bottom: 30px;
+    }
+    .popular, .all-articles, .separate{
+      width: 100%;
+      max-width: 878px;
+    }
+
+    .image-post img{
+      width: 100%;
+    }
+    .popular-second{
+      width: 100%;
+      max-width: 878px;
+    }
+    .font-grip, .pharagraph-article, .data-post{
+      width: 95%;
+
+    }
+  }
+
+  @media screen and (max-width:911px){
+    .search, .popular{
+      width: 100%;
+      max-width: 750px;
+    }
+   .separate{
+      width: 100%;
+      max-width: 838px;
+    }
+    .principal{
+      width: 80%;
+      height: 60%;
+    }
+    .title-popular{
+      font-size: 25px;
+    }
+    .p-principal{
+      line-height: 120%;
+      padding-bottom: 1px;
+    }
+
+    .name-post, .date-post{
+      font-size: 12px;
+    }
+
+    .popular-second, .separate, .all-articles{
+      width: 100%;
+      max-width: 750px;
+    }
+  }
+  @media screen and (max-width:780px){
+    .ul-header-blog li{
+      margin: 15px 5px ;
+    }
+    .search {
+      width: 100%;
+      max-width: 560px;
+    }
+    .popular-firts-part{
+      flex-direction: column-reverse;
+      overflow: hidden;
+    }
+    .p-principal {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      line-height: 150%;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .information-post{
+      margin-left: 5%;
+    }
+    .popular, .all-articles, .font-grip, .separate{
+      width: 100%;
+      max-width: 560px;
+    }
+    .title-popular, .subtitle, .data-post{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .principal img{
+      width: 150%;
+    }
+
+    .content-all-articles{
+      flex-direction: column;
+    }
+    .article-image img{
+      width: 100%;
+    }
+    .infomation-all-articles{
+      padding-left: 0;
+      padding-right: 20px;
+    }
+    .separate{
+      margin-bottom: 5%;
+      padding-top: 10%;
+    }
+    .data-post{
+      margin-top: 5%;
+      padding-left: 0;
+    }
+    .popular-second{
+      grid-template-columns: repeat(auto-fill, minmax(560px, max-content));
+      justify-content: center;
+      padding-left: 20px;
+      padding-right: 20px;
+     
+    }
+  }
+
+  @media screen and (max-width:425px){
+    .ul-header-blog li{
+      margin: 15px 5px ;
+    }
+    .search {
+      width: 100%;
+      max-width: 360px;
+    }
+    .popular-firts-part{
+      flex-direction: column-reverse;
+      overflow: hidden;
+      max-width: 360px;
+    
+    }
+    .p-principal{
+      margin-top: 20px;
+      margin-bottom: 10px;
+      line-height: 150%;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .popular, .all-articles, .font-grip, .separate{
+      width: 100%;
+      max-width: 360px;
+    }
+    .title-popular, .subtitle, .data-post{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .principal img{
+      width: 100%;
+    }
+
+    .content-all-articles{
+      flex-direction: column;
+    }
+    .infomation-all-articles{
+      padding-left: 0;
+      padding-right: 20px;
+    }
+    .separate{
+      margin-bottom: 10%;
+      padding-top: 15%;
+
+    }
+    .data-post{
+      margin-top: 5%;
+      padding-left: 0;
+    }
+
+
+
+  }
+
+  
+
+
+
+
+
 
 
 
