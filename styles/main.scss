@@ -1,0 +1,19 @@
+@import "settings/variables";
+@import "helpers/flex";
+@import "molecules/molecules";
+@import "organism/organism";
+@import "atoms/atoms";
+
+
+.padding{
+  padding: 50px 80px 30px 80px;
+}
+
+.padding-right{
+  padding-right: 20px;
+}
+
+.margin-bottom{
+  margin-bottom: 30px;
+  max-width: 940px;
+}

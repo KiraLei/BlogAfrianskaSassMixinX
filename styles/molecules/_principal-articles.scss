@@ -1,0 +1,21 @@
+.principal-articles {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, max-content));
+  gap: 2%;
+  justify-content: center;
+  
+  h3{
+    font-size: map-get($font-size, medium-small);
+    color: map-get($colors, secondary);
+  }
+  p{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: map-get($font-size, small);
+    color: map-get($colors, primary);
+    line-height: 1.4;
+    opacity: 0.8;
+  }
+}

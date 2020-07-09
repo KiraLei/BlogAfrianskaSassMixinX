@@ -1,0 +1,23 @@
+.search{
+  width: 100%;
+  max-width: 940px;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  background-color: #f4f4f4;
+  
+  input{
+    width: 100%;
+    max-width: 880px;
+    height: 56px;
+    background-color:transparent;
+    margin: auto;
+    outline: none;
+    border: none;
+  }
+  .icon-search{
+    padding-left: 20px;
+    }
+}

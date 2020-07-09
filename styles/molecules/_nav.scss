@@ -1,0 +1,16 @@
+.nav {
+  li {
+    margin-left: 10px;
+  }
+
+  a {
+    color: map-get($colors , primary);
+    padding: 10px;
+    background: #fff;
+
+    &:hover {
+      background: map-get($colors , secondary);
+      color: #fff;
+    }
+  }
+}

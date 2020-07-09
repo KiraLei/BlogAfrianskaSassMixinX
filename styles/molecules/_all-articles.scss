@@ -1,0 +1,20 @@
+.all-articles{
+  margin-bottom: 30px;
+  
+  h3{
+    font-size: map-get($font-size, medium-small);
+    color: map-get($colors, secondary);
+    padding-left: 25px;
+    
+  }
+  p{
+    padding-left: 25px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: map-get($font-size, small);
+    color: map-get($colors, primary);
+    line-height: 1.4;
+    opacity: 0.8;
+  }
+  
+}

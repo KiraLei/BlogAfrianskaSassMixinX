@@ -1,0 +1,15 @@
+.separate{
+  color: #ccc;
+  border-bottom:1px solid #b1adad;
+  padding-bottom: 20px;
+  max-width: 100%;
+}
+
+.bottom-separate{
+  margin-bottom: 30px;
+  a{
+    padding-left: 780px;
+    font-size: map-get($font-size, small);
+  }
+}
+

@@ -1,0 +1,11 @@
+.principal-article{
+  h2{
+    font-size: map-get($font-size, large);
+    color: map-get($colors, secondary);
+  }
+  p{
+    line-height: 1.8;
+  }
+}
+
+
