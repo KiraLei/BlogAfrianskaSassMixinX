@@ -8,8 +8,52 @@
 .bottom-separate{
   margin-bottom: 30px;
   a{
-    padding-left: 780px;
+    padding-left: 80%;
+    white-space: nowrap;
     font-size: map-get($font-size, small);
+  }
+}
+
+
+@media screen and (max-width:773px){
+  .bottom-separate{
+    a{
+      padding-left: 70%;
+    }
+  }
+}
+
+@media screen and (max-width:630px){
+  .bottom-separate{
+    a{
+      padding-top: 90px;
+      padding-left: 70%;
+    }
+  }
+}
+
+@media screen and (max-width:520px){
+  .bottom-separate{
+    a{
+      padding-top: 90px;
+      padding-left: 65%;
+    }
+  }
+}
+@media screen and (max-width:445px){
+  .bottom-separate{
+    a{
+      padding-top: 90px;
+      padding-left: 55%;
+    }
+  }
+}
+
+@media screen and (max-width:350px){
+  .bottom-separate{
+    a{
+      padding-left: 45%;
+    }
   }
 }
 

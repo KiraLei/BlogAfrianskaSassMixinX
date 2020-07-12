@@ -8,7 +8,8 @@ footer{
 }
 
 @mixin footer-box {
-  width: 940px;
+  width: 100%;
+  max-width: 940px;
   margin: auto;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -37,17 +38,23 @@ footer{
   p{
     @include p-box;
     opacity: 0.9;
+    margin-bottom: 40px;
   }
   a{
     background-color: #579dee;
     color: #f4f4f4;
     font-size: map-get($font-size, small);
     padding: 10px 30px 10px 30px;
+    margin-right: 30px;
     border-radius: 10px;
-
+    white-space: nowrap;
   }
 
+
+
 }
+
+
 
 .second-section-footer{
   @include footer-box;
@@ -56,6 +63,9 @@ footer{
   }
   p{
     @include p-box;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 20px;
     
   }
   a{
@@ -76,4 +86,29 @@ footer{
   color: #fff;
   opacity: 0.6;
   padding-bottom: 30px;
+}
+
+@media screen and (max-width:1000px){
+  .firts-section-footer, .second-section-footer{
+    width: 80%;
+    margin: 0px 40px 0px 80px;
+
+}
+
+}
+
+@media screen and (max-width:825px){
+  .firts-section-footer, .second-section-footer{
+    width: 70%;
+    margin: 0px 0px 0px 40px;
+}
+
+}
+
+@media screen and (max-width:830px){
+  .firts-section-footer, .second-section-footer, .footer-afrianska{
+    flex-direction: column;
+    display: inline;
+    text-align: start;
+}
 }

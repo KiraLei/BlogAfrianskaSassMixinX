@@ -23,3 +23,23 @@ body{
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+
+@media screen and (max-width:845px){
+  .h2-sub-title{
+    padding-left: 30px;
+  }
+  
+  .arrows{
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width:500px){
+  .arrows{
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+
