@@ -2,11 +2,18 @@
   h2{
     font-size: map-get($font-size, large);
     color: map-get($colors, secondary);
+    font-family: map-get($font-family, secondary);
+    
   }
   p{
     line-height: 1.8;
+    font-family: map-get($font-family, primary);
   }
   
+}
+
+.h2-sub-title{
+  font-family: map-get($font-family, secondary);
 }
 
 @media screen and (max-width:845px){

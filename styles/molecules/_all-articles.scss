@@ -4,6 +4,7 @@
   h3{
     font-size: map-get($font-size, medium-small);
     color: map-get($colors, secondary);
+    font-family: map-get($font-family, secondary);
     padding-left: 25px;
     
   }
@@ -12,6 +13,7 @@
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: map-get($font-size, small);
+    font-family: map-get($font-family, primary);
     color: map-get($colors, primary);
     line-height: 1.4;
     opacity: 0.8;

@@ -1,6 +1,5 @@
 .search{
   width: 100%;
-  max-width: 940px;
   margin: auto;
   align-items: center;
   display: flex;
@@ -9,11 +8,10 @@
   background-color: #f4f4f4;
  
   input{
-    width: 100%;
-    max-width: 880px;
+    width: 90%;
     height: 56px;
     background-color:transparent;
-    margin: auto;
+    margin-left: 20px;
     outline: none;
     border: none;
   }
@@ -26,28 +24,11 @@
 
 
 @media screen and (max-width:845px){
-    .search{
-      width: 100%;
-      max-width: 700px;
-      } 
-}
-
-@media screen and (max-width:760px){
   .search{
-    width: 100%;
-    max-width: 600px;
-    } 
-}
-@media screen and (max-width:620px){
-  .search{
-    width: 100%;
-    max-width: 450px;
-    } 
-}
-
-@media screen and (max-width:475px){
-  .search{
-    width: 100%;
-    max-width: 330px;
-    } 
+    width: 92%;
+    input{
+      width: 90%;
+  
+    }
+  }
 }

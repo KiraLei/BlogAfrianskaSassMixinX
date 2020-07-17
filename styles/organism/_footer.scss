@@ -1,46 +1,43 @@
-
-footer{
+footer {
+  width: 100%;
   background-color: #2666af;
   border-top-right-radius: 200px;
-  width: 100%;
-  max-width: 1450px;
-  margin:0 20px 0 0;
+  width: 90%;
 }
 
 @mixin footer-box {
-  width: 100%;
+  width: 100vw;
   max-width: 940px;
   margin: auto;
   padding-top: 50px;
   padding-bottom: 50px;
+  padding-left: 5.5%;
 }
 
-@mixin h4-box{
+@mixin h4-box {
   color: #fff;
   padding: 50px 80px 30px 0px;
   font-size: map-get($font-size, medium-small);
-
 }
 
-@mixin p-box{
+@mixin p-box {
   color: #fff;
-    max-width: 550px;
-    line-height: 1.8;
-    font-size: map-get($font-size, small);
-
+  max-width: 550px;
+  line-height: 1.8;
+  font-size: map-get($font-size, small);
 }
 
-.firts-section-footer{
+.firts-section-footer {
   @include footer-box;
-  h4{
+  h4 {
     @include h4-box;
   }
-  p{
+  p {
     @include p-box;
     opacity: 0.9;
     margin-bottom: 40px;
   }
-  a{
+  a {
     background-color: #579dee;
     color: #f4f4f4;
     font-size: map-get($font-size, small);
@@ -49,66 +46,61 @@ footer{
     border-radius: 10px;
     white-space: nowrap;
   }
-
-
-
 }
 
-
-
-.second-section-footer{
+.second-section-footer {
   @include footer-box;
-  h4{
+  h4 {
     @include h4-box;
   }
-  p{
+  p {
     @include p-box;
     font-weight: bold;
     font-size: 1.5rem;
     margin-top: 20px;
-    
   }
-  a{
+  a {
     color: #f4f4f4;
     font-size: map-get($font-size, small);
     line-height: 2;
     border-radius: 10px;
-
   }
   ul li {
     color: #fff;
     line-height: 2;
   }
-  
 }
 
-.copyright{
+.copyright {
   color: #fff;
   opacity: 0.6;
   padding-bottom: 30px;
 }
 
-@media screen and (max-width:1000px){
-  .firts-section-footer, .second-section-footer{
-    width: 80%;
-    margin: 0px 40px 0px 80px;
-
+@media screen and (max-width: 1100px) {
+  .firts-section-footer,
+  .second-section-footer {
+    width: 90%;
+    margin: 0px 40px 0px 10px;
+  }
 }
 
+@media screen and (max-width: 1063px) {
+  .firts-section-footer,
+  .second-section-footer {
+    width: 90%;
+    margin: 0px 0px 0px 0px;
+    padding-left: 4.5%;
+  }
 }
 
-@media screen and (max-width:825px){
-  .firts-section-footer, .second-section-footer{
-    width: 70%;
-    margin: 0px 0px 0px 40px;
-}
-
-}
-
-@media screen and (max-width:830px){
-  .firts-section-footer, .second-section-footer, .footer-afrianska{
+@media screen and (max-width: 830px) {
+  .firts-section-footer,
+  .second-section-footer,
+  .footer-afrianska {
     flex-direction: column;
     display: inline;
     text-align: start;
-}
+    margin: 0px 40px 0px 30px;
+  }
 }
